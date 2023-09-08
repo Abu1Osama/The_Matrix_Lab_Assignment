@@ -11,6 +11,7 @@ import PairAddress from "../Pages/PairAddress";
 import TokenAddress from "../Pages/TokenAddress";
 
 function Sidebar() {
+  const [sidebartabVisible, setSidebartabVisible] = useState(true);
   const [sidebardata, setSidebardata] = useState([
     {
       name: "Token Address",
@@ -25,18 +26,32 @@ function Sidebar() {
   ]);
   const [currentindex, setCurrentindex] = useState(0);
 
+  const toggleSidebartab = () => {
+    setSidebartabVisible(!sidebartabVisible);
+  };
+
   return (
     <div className="page" id="page">
-      <div className="sidebar" id="sidebar">
+      <div
+        className={`sidebar ${sidebartabVisible ? "active" : ""}`}
+        id="sidebar"
+      >
         <div className="logotop">
-          <img className="menu" src={menu} alt="" />
+          <img
+            className="menu"
+            onClick={() => toggleSidebartab()}
+            src={menu}
+            alt=""
+          />
           <img className="topic" src={topicon} alt="" />
           <h2>NFTify</h2>
           <div className="connect">
             <button>Connect</button>
+          </div>
         </div>
-        </div>
-        <div className="sidebartab">
+        <div
+          className={`sidebartab ${sidebartabVisible ? "activesidebar" : ""}`}
+        >
           {sidebardata.map((item, index) => (
             <div
               onClick={() => {
