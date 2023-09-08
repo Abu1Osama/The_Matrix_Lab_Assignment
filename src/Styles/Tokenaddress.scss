@@ -1,0 +1,185 @@
+#tokenaddress.tokenaddress {
+  padding: 20px 40px;
+  height: 100vh;
+  overflow-y: scroll;
+  .pair-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .inp {
+      position: relative;
+      input {
+        border-radius: 20px;
+        border: 1px solid #fff;
+        width: 435px;
+        padding: 15px;
+        flex-shrink: 0;
+        color: white;
+        background: linear-gradient(
+          95deg,
+          rgba(124, 15, 53, 0.2) 4.79%,
+          rgba(88, 18, 102, 0.2) 100%
+        );
+        &::placeholder {
+          color: #fff;
+          font-family: Poppins;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          padding: 0 10px;
+        }
+      }
+      .searchico {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        cursor: pointer;
+      }
+    }
+    .connect {
+      button{
+
+      
+        text-align: center;
+        border-radius: 20px;
+        background: linear-gradient(95deg, #7c0f35 7.59%, #581266 104.01%);
+        width: 156px;  
+        // height: 52px;
+        padding: 15px ;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: transparent;
+        cursor: pointer;
+      }
+      
+    }
+  }
+  .container {
+    display: grid;
+    gap: 10px;
+    .serch-top {
+      color: var(--Cultured-Grey, #f7f9f9);
+      font-family: Work Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    .data-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 279px);
+      gap: 10px;
+    
+      .fetchdata {
+        width: 279px;
+        height: 188px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #390554;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+        padding: 10px 30px;
+        position: relative;
+
+        .name {
+          color: #fff;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .pair,
+        .symbol,
+        .dexID,
+        .address {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          color: #f5f5f5;
+          font-family: Poppins;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          overflow: hidden;
+          span:nth-child(2) {
+            color: #f5f5f5;
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+        .fetchico {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          padding: 0 7px;
+          img {
+            flex-shrink: 0;
+            background: #960252;
+            padding: 10px;
+            border-radius: 9999px;
+          }
+        }
+      }
+    }
+    .no-data-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      color: black;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 30px;
+      margin-top: 10px;
+      font-weight: 900;
+      font-size: 24px;
+      border-radius: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #tokenaddress.tokenaddress {
+    padding: 20px;
+    .pair-top {
+      .connect {
+        display: none;
+      }
+      .inp {
+        input {
+          width: 350px;
+        }
+      }
+    }
+    .container {
+      .data-wrapper {
+        grid-template-columns: 100%;
+        .fetchdata {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .no-data-message {
+        // width: 100%;
+        padding: 0px;
+        width: 200px;
+        font-size: 14px;
+      }
+    }
+  }
+}

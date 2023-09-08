@@ -1,0 +1,130 @@
+#page.page {
+  display: flex;
+
+  #sidebar.sidebar {
+    width: 288px;
+    //   height: 982px;
+    // position: fixed;
+    height: 100vh;
+    bottom: 0;
+    flex-shrink: 0;
+    border-radius: 0px 32px 32px 0px;
+    background: #292929;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    .logotop {
+      .menu {
+        display: none;
+      }
+      .connect {
+        display: none;
+      }
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 25px;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 25px;
+        height: 29.333px;
+        flex-shrink: 0;
+      }
+      h2 {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: Pacifico;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .sidebartab {
+      display: grid;
+      gap: 25px;
+      cursor: pointer;
+      .sidebartab-data {
+        display: flex;
+        padding: 12px 30px;
+        gap: 10px;
+        span {
+          color: var(--Cultured-Grey, #f7f9f9);
+          font-family: Work Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28px;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          flex-shrink: 0;
+        }
+        &.active {
+          background: #f30050;
+        }
+      }
+    }
+    .social {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 12px 30px;
+      position: absolute;
+      width: 100%;
+      bottom: 100px;
+    }
+  }
+  .component {
+    width: 100%;
+    // display: none;
+    height: max-content;
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  #page.page {
+    flex-direction: column;
+    #sidebar.sidebar {
+      background: none;
+      .logotop {
+        .menu {
+          display: block;
+        }
+        .topic {
+          display: none;
+        }
+        .connect {
+          display: block;
+          button {
+            text-align: center;
+            border-radius: 20px;
+            background: linear-gradient(95deg, #7c0f35 7.59%, #581266 104.01%);
+            width: 156px;
+            // height: 52px;
+            padding: 15px;
+
+            color: #fff;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border: transparent;
+            cursor: pointer;
+            margin-left: 25px;
+          }
+        }
+      }
+
+      width: 100%;
+      height: 100%;
+      .sidebartab,
+      .social {
+        display: none;
+      }
+    }
+  }
+}

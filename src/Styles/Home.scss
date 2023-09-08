@@ -1,0 +1,11 @@
+#home.home {
+  background: url("../assest/Rectangle.png"), lightgray 50% / cover no-repeat;
+  .bottom {
+    background: #f30050;
+    padding: 10px;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
