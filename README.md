@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# NFTify Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NFTify is a responsive web application that provides information about pair addresses and token addresses on a decentralized exchange. Users can search for both pair addresses and token addresses using this application.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About](#about)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+NFTify is a web application designed to help users easily access information related to pair addresses and token addresses on a decentralized exchange. Whether you need to look up a specific pair or token, NFTify makes the process simple and responsive.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Search for pair addresses.
+- Search for token addresses.
+- Responsive design for various screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+![Screenshot 1](./src/assest/one.png)
+![Screenshot 2](./src/assest/two.png)
+![Screenshot 2](./src/assest/three.png)
+![Screenshot 2](./src/assest/four.png)
+![Screenshot 2](./src/assest/five.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deployed Link:-https://the-matrix-lab-assignment-six.vercel.app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+# Clone the repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+git clone https://github.com/Abu1Osama/The_Matrix_Lab_Assignment.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Change directory
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+cd your-repo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Install dependencies
 
-## Learn More
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Start the development server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- NFTify is built using the following technologies:
 
-### Analyzing the Bundle Size
+- React
+- Axios
+- Scss
+- Figma
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Open the application in your web browser.
+2. Use the search feature to look up specific pair addresses or token addresses.
+3. Explore the details and information provided for each pair or token.
